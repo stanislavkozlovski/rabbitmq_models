@@ -1,3 +1,5 @@
+from datetime import datetime, date
+
 from rabbitmq_models.exceptions import InvalidSchemaError
 
 
@@ -10,6 +12,8 @@ class BaseModel:
 
         for attribute, value in self.__dict__.items():
             if attribute in self.ACCEPTED_ATTRS and value is not None:
+                if isinstance(value, (datetime, date)):
+                    value = value.isoformat()
                 data[attribute] = value
 
         return data
