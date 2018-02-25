@@ -4,6 +4,7 @@ from rabbitmq_models.base_model import BaseModel
 
 
 class ReadArticle(BaseModel):
+    EXCHANGE_NAME = 'articles.read'
     REQUIRED_ATTRS = ['title', 'read_at']
     ACCEPTED_ATTRS = REQUIRED_ATTRS + ['url']
 
