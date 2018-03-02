@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='rabbitmq_models',
-      version='0.1.2',
+      version='0.2.0',
       description='General models for the Harmonium project',
       url='https://github.com/Enether/rabbitmq_models',
       author='Stanislav Kozlovski',
