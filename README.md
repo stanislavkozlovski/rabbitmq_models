@@ -17,5 +17,5 @@ from rabbitmq_models.article import Article
 
 article = Article(title='Hello')
 article.serialize()
-# returns { 'title': 'Hello' }
+# returns { 'title': 'Helloa' }
 ```
