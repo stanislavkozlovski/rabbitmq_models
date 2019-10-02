@@ -6,4 +6,3 @@ pytest==3.4.1
 python-dateutil==2.6.1
 pytz==2018.3
 six==1.11.0
-tenenbaum on the logo it's getting purchased
